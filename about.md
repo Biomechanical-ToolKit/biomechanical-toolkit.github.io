@@ -15,7 +15,7 @@ The Biomechanical ToolKit project started in 2009. The original goal was to prop
   - ANB, ANC, TRB, TRC (Motion Analysis Corp.)
   - DAT (Kistler)
 
-The released tools gave the possibility to explire, modify, and merge acquisition data. There was four ways to use these tools:
+The released tools gave the possibility to explore, modify, and merge acquisition data. There was four ways to use these tools:
 
   - As a C++ library (BTK::Core) 
   - As a Matlab toolbox
