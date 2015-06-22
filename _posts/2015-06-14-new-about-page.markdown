@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New 'About' page"
+title:  "New about page"
 date:   2015-06-14 23:02
 categories: btk website
 ---
