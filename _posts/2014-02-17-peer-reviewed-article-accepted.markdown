@@ -5,7 +5,6 @@ date:   2014-02-17 00:00
 categories: btk article
 ---
 
-
 We have the pleasure to announce you that a peer-reviewed [article] is now available for BTK and Mokka. This paper can be used to cite the project in your study.
 
 The complete reference is:  
@@ -15,4 +14,3 @@ The complete reference is:
 
 
 [article]: http://www.sciencedirect.com/science/article/pii/S0169260714000248
-
