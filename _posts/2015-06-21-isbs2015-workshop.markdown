@@ -1,0 +1,19 @@
+---
+layout: post
+title:  ISBS2015 workshop
+date:   2015-06-21 09:08
+categories: btk mokka conference
+---
+
+We are very proud to announce that we were invited to the [33rd International Conference on Biomechanics in Sports] to present the usages and evolutions of the project!
+
+A [workshop] entitled "_Biomechanical toolkit: a step toward independency between motion capture data and biomechanical analysis_", scheduled on 29 june 2015, will present the current usages and the evolutions in development. If your are there, do not hesitate to meet Arnaud! He will be very happy to speak with you about the project. You will find more details regarding the content of the proceedings in the [abstract] and [proceeding]. 
+
+The workshop is kindly supported by the groups [SB] and [SOFAMEA].
+
+[33rd International Conference on Biomechanics in Sports]: http://isbs2015.sciencesconf.org
+[workshop]: http://isbs2015.sciencesconf.org/71538
+[abstract]: http://isbs2015.sciencesconf.org/conference/isbs2015/BTK_Abstract_workshop_final.pdf
+[proceeding]: http://isbs2015.sciencesconf.org/71538/document
+[SB]: http://www.biomecanique.org
+[SOFAMEA]: http://sofamea.org
