@@ -16,12 +16,12 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         {{ post.excerpt }}
-        {% capture content_words %} 
-          {{ post.content | number_of_words }} 
-        {% endcapture %} 
-        {% capture excerpt_words %} 
-          {{ post.excerpt | number_of_words }} 
-        {% endcapture %} 
+        {% capture content_words %}
+          {{ post.content | number_of_words }}
+        {% endcapture %}
+        {% capture excerpt_words %}
+          {{ post.excerpt | number_of_words }}
+        {% endcapture %}
         {% if excerpt_words != content_words %}
           <a href="{{ post.url }}">Read more...</a>
         {% endif %}
