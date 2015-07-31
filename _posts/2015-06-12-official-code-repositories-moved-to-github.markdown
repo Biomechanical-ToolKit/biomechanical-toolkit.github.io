@@ -5,7 +5,7 @@ date:   2015-06-12 22:34
 categories: btk code
 ---
 
-All the mirror code repositories on GitHub are now the official ones. Due to the differences between Google Code and GitHub, each part of the project has now its own repository (core, python, mokka, documentation, data, etc.).
+All the mirror code repositories on GitHub are now the official ones. Due to the differences between Google Code and GitHub, each part of the project has now its own repository (core, python, mokka, documentation, data, etc.).<!--more-->
 
 The following items list the existing repositories when this piece of news was written:
 

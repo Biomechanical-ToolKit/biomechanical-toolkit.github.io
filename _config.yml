@@ -8,6 +8,7 @@ twitter_username: btkwww
 github_username:  biomechanical-toolkit
 
 highlighter: pygments
+excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown

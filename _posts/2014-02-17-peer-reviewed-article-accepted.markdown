@@ -5,7 +5,7 @@ date:   2014-02-17 00:00
 categories: btk article
 ---
 
-We have the pleasure to announce you that a peer-reviewed [article] is now available for BTK and Mokka. This paper can be used to cite the project in your study.
+We have the pleasure to announce you that a peer-reviewed [article] is now available for BTK and Mokka. This paper can be used to cite the project in your study.<!--more-->
 
 The complete reference is:  
 
