@@ -1,15 +1,11 @@
 ---
 layout: post
 title:  "DevLog 07.2015"
-date:   2015-07-30 21:48
+date:   2015-07-31 21:48
 categories: btk devlog
 ---
 
-This month the development was split in two parts:
-
-  1. Design of the new pipeline mechanism
-  2. Reverse-engineering on the QTM file format (Qualisys)<br>
-<br><!--more-->
+This month the development focused on the implementation of the new pipeline mechanism.<!--more-->
 
 ###New pipeline mechanism in development###
 Since the beginning of the project, the data processing is done using a succession of algorithms. This creates a pipeline which in theory is able to manage the given inputs and outputs, but most importantly updates automatically every algorithm when needed. This pipeline behavior is not new and was inspired by the one used in the projects [VTK] and [ITK]. However, compared to these project the implemented pipeline mechanism was simplified to keep only the basis (check if inputs are modified. If yes, then update first the source associated with each input). The management of inputs and outputs was done manually by each algorithm (i.e. the developer has to implement it each time). Different types were used and hardcoded for the inputs and outputs. This limits the development of complex pipeline were some part needed to be updated manually to have access to information needed by other part of the algorithm.
