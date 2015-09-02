@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "DevLog 08.2015"
+date:   2015-08-31 18:52
+categories: btk devlog
+---
+
+This month the development focused on the implementation of the new pipeline mechanism.<!--more-->
+
+###Details on the new pipeline mechanism###
+Already implemented in the original core of BTK, a pipeline mechanism  simplifies the data processing by focusing only on the processing steps. However, as mentioned in the previous [DevLog]({% post_url 2015-07-31-devlog-07.2015 %}), the original mechanism implemented in BTK was badly designed for some parts and needed to be rewritten. The new design is largely inspired by the [new one](http://www.vtk.org/Wiki/VTK/Tutorials/New_Pipeline) proposed in [VTK](http://www.vtk.org) 6.
+
+There are 4 important classes behind the new pipeline mechanism.
+
+ - `Algorithm` 
+ - `Port`
+ - `Information`
+ - `Executive`
+
+An `Algorithm` is the base class for all processes which intends to generate/filter data. Two steps will be enough to setup an algorithm completed by the implementation of the processing itself. Of course, most of the internal behavior (configuration order, custom request, custom option, etc) can be modified but this is not necessary by default. The setup corresponds only to:
+
+ 1. The number of inputs and outputs
+ 2. Information on requested/optional input(s) and generated output(s)
+ 
+The connection of algorithms together uses mostly the same syntax than before but the passed content changed. Instead of passing directly the output data of an algorithm as the input data of another one, a `Port` object is now passed. Compared to a data object, a `Port` object contains `Information` related to the data object needed (input) or generated (output). This difference with the old mechanism gives the possibility to use a generic object passed between algorithms while the processing is realized on specific requested data.
+
+Finally, the execution (or update) of the pipeline is managed by `Executive` object embedded in each `Algorithm`. The update requested by an algorithm is sent to its `Executive` which will manage all the processing steps. The default implementation gives the possibility to run a pipeline in the upstream direction with the following steps realized for each algorithm:
+
+ 1. Verify if the pipeline must be updated
+ 2. Ensure that all output data exist
+ 3. Verify inputs consistency
+ 4. Execute the algorithm
