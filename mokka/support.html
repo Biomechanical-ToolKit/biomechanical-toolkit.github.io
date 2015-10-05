@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Mokka, motion kinetic and kinematic analyzer,  powered by BTK, the open-source Biomechanical ToolKit" />
+  <meta name="keywords" content="btk, mokka, mac, windows, linux, vicon, motion analysis, elite, bts bioengineering, viewer, 3d, chart, c3d, trb, trc, anb, anc, ang, emf, emg, mom, pwr, rah, raw, ric" />
+  <title>Mokka - Motion Kinematic &amp; Kinetic Analyzer</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />  
+  
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34964654-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body>
+  <div id="nav-frame">
+    <div id="nav-background"></div>
+    <div id="nav">
+      <div class="nav-menu">
+        <div class="nav-links">
+          <div id="nav-items">
+            <ul>
+              <li><a id="btk" href="http://code.google.com/p/b-tk/" onclick="window.open('http://b-tk.googlecode.com', '_blank'); return false;">Visit the Google Code project</a></li>
+              <li><a id="home" href="index.html">Home</a></li>
+              <li><a id="support" href="support.html" class="active">Support</a></li>
+              <li><a id="news" href="news.html">News</a></li>
+            </ul>
+          </div>
+          <div id="social_buttons">
+            <div id="gplusone">
+              <!-- Place this tag where you want the +1 button to render. -->
+              <div class="g-plusone" data-size="medium" data-annotation="none" href="http://code.google.com/p/b-tk/"></div>
+              <!-- Place this tag after the last +1 button tag. -->
+              <script type="text/javascript">
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </div>
+            <div id="twitter">
+              <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                src="//platform.twitter.com/widgets/follow_button.html?screen_name=btkwww&button=grey&show_count=false" style="width:130px; height:20px;"></iframe>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="details-frame">
+    <div class="details">
+      
+      <h3>Informations to use and build Mokka</h3>
+      <div class="vspace"></div>
+      
+      <div class="support">
+        <h2>Documentation</h2>
+        <p>Mokka includes an HTML documentation which will be opened in your internet browser when you click on the menu <em>Help > Mokka Help</em>.</p>
+        <p>You can also browse the same documentation <a href="http://b-tk.googlecode.com/svn/doc/Mokka/0.6/index.html" onclick="window.open('http://b-tk.googlecode.com/svn/doc/Mokka/0.6/index.html', '_blank'); return false;">online</a>.</p>
+      </div>
+      
+      <div class="support">
+        <h2>Feature Requests / Issues</h2>
+        <p>If you have any questions, you can contact us on the <a href="http://groups.google.com/group/btk-users" onclick="window.open('http://groups.google.com/group/btk-users', '_blank'); return false;">forum</a>.</p>
+        <p>If you would like to see a new feature in Mokka then you can use:
+          <ul>
+            <li>The "feedback &amp; support" tab on the main page ;</li>
+            <li>The corresponding forum on <a href="http://mokka.uservoice.com" onclick="window.open('http://mokka.uservoice.com/forums/158152-general', '_blank'); return false;">UserVoice</a> which register your request (or you can vote for features requested by others) ;
+            <li>The main <a href="http://code.google.com/p/b-tk/issues/list" onclick="window.open('http://code.google.com/p/b-tk/issues/list', '_blank'); return false;">bug tracker</a> from the google code website.</li>
+          </ul>
+        </p>
+      </div>
+      
+      <div class="support">
+        <h2>Software requirements</h2>
+        <p>The distributed binaries are standalone packages. You don't need other software or library to use Mokka on your computer.</p>
+        <p>Mokka is available for Microsoft Windows (XP, Vista and Seven) for 32-bit and 64-bit architectures.<br/>
+           Mokka is also available for MacOS 10.7 or greater for 64-bit architecture.<br/>
+          No binary is (yet) available for Linux, but Mokka was tested under Ubuntu (10.04) without any problem.</p>
+      </div>
+      
+      <div class="support">
+        <h2>Hardware requirements</h2>
+        <p>Mokka was tested on several configuration based on Intel or AMD processor without any problem. However, it is required that the computer supports the OpenGL standard used to draw the content of the 3D views as well as the charts. Most of the graphic cards support the OpenGL standard.</p>
+        <p>Only one user reports a display problem due to an Intel chipset embedded in his laptop. However, this problem seems more related to the drives as others users have laptop with Intel chipset.</p>
+      </div>
+      
+      <div class="support">
+        <h2>Source code</h2>
+        <p>The source code of Mokka is provided with the source code of the library <a id="btk" href="http://code.google.com/p/b-tk/" onclick="window.open('http://b-tk.googlecode.com', '_blank'); return false;">BTK</a>: Biomechanical ToolKit. You can find it in the subfolder <em>Tools</em>.</p>
+        <p>
+          To build Mokka, you need few dependencies:
+          <ul>
+            <li>CMake 2.6 or greater to build the project on any platform: <a href="http://www.cmake.org" onclick="window.open('http://www.cmake.org', '_blank'); return false;">www.cmake.org</a></li>
+            <li>VTK 5.8 or greater for the 3D viewer and the chart viewer: <a href="http://www.vtk.org" onclick="window.open('http://www.vtk.org', '_blank'); return false;">www.vtk.org</a></li>
+            <li>Qt 4.6 or greater for the user interface on any platform: <a href="http://qt-project.org" onclick="window.open('http://qt-project.org', '_blank'); return false;">qt-project.org/</a> (Note: Qt 4.x must be used. Qt5 is not supported)</li>
+          </ul>
+          All the required instructions to build BTK with Mokka are provided in the <a href="http://b-tk.googlecode.com/svn/doc/API/0.1/_build_instructions.html" onclick="window.open('http://b-tk.googlecode.com/svn/doc/API/0.1/_build_instructions.html', '_blank'); return false;">documentation</a> of BTK
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Powered by the open-source library <a href="http://b-tk.googlecode.com" onclick="window.open('http://b-tk.googlecode.com', '_blank'); return false;">Biomechanical ToolKit</a> (BTK)</p>
+    <p>Copyright &copy; Arnaud Barré, 2011-2013. All rights reserved.</p>
+  </div>
+</body>
+</html>

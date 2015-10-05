@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Mokka, motion kinetic and kinematic analyzer,  powered by BTK, the open-source Biomechanical ToolKit" />
+  <meta name="keywords" content="btk, mokka, mac, windows, linux, vicon, motion analysis, elite, bts bioengineering, viewer, 3d, chart, c3d, trb, trc, anb, anc, ang, emf, emg, mom, pwr, rah, raw, ric" />
+  <title>Mokka - Motion Kinematic &amp; Kinetic Analyzer</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/reflection.js"></script>
+  
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <script>
+    
+    /* ----------------------- fancybox ----------------------- */
+    
+    function formatTitle(title, currentArray, currentIndex, currentOpts) {
+        var index = title.search(" - ");
+        label = title.substring(0,index);
+        desc = title.substring(index+3);
+        return '<div id="grouped-title" class="image-title">' + label + '</div><div class="image-counter">Screenshot ' + (currentIndex + 1) + ' of ' + currentArray.length + '</div><div class="image-desc">' + desc + '</div>';
+    }
+  
+    $(document).ready(function() {
+      
+      $("a.grouped").fancybox({
+          'titlePosition':'inside',
+          'titleFormat':formatTitle,
+          'speedIn':600,
+          'speedOut':200,
+          'changeSpeed':300,
+          'cyclic':true
+        });
+
+      $("a#download-now").fancybox({
+        'hideOnContentClick':true,
+        'speedIn':0,
+        'speedOut':0,
+        'transitionIn':'none',
+        'transitionOut':'none',
+      });
+    });
+    
+  </script>
+  
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34964654-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body>
+  <div id="nav-frame">
+    <div id="nav-background"></div>
+    <div id="nav">
+      <div class="nav-menu">
+        <div class="nav-links">
+          <div id="nav-items">
+            <ul>
+              <li><a id="btk" href="http://code.google.com/p/b-tk/" onclick="window.open('http://b-tk.googlecode.com', '_blank'); return false;">Visit the Google Code project</a></li>
+              <li><a id="home" href="index.html" class="active">Home</a></li>
+              <li><a id="support" href="support.html">Support</a></li>
+              <li><a id="news" href="news.html">News</a></li>
+            </ul>
+          </div>
+          <div id="social_buttons">
+            <div id="gplusone">
+              <!-- Place this tag where you want the +1 button to render. -->
+              <div class="g-plusone" data-size="medium" data-annotation="none" href="http://code.google.com/p/b-tk/"></div>
+              <!-- Place this tag after the last +1 button tag. -->
+              <script type="text/javascript">
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </div>
+            <div id="twitter">
+              <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                src="//platform.twitter.com/widgets/follow_button.html?screen_name=btkwww&button=grey&show_count=false" style="width:130px; height:20px;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="showoff">
+    <div id="intro">
+      <div id="intro-text">
+        <div id="intro-title">
+          <img src="images/Mokka_title.png"></img>
+        </div>
+        <p id="item1">Open-source and cross-platform software to easily analyze biomechanical data.</p>
+        <p id="item2">Reads, writes <a href="http://www.c3d.org">C3D</a> files and many other formats!</p>
+        <p id="item3">Visualize in 3D and 2D markers' trajectories, force platforms, segments, but also joint angles, forces, moments, as well as analog signals like EMGs.</p>
+        <p id="item4">Finally an easy way to explore data between laboratories and hardwares.</p>
+      </div>
+      <div id="intro-download-button">
+        <a id="download-now" class="button blue" href="#downloads">Download Now</a>
+        <div style="display:none">
+          <div id="downloads">
+            <ul class="download-list">
+              <li id="download-win">Microsoft Windows (XP, Vista, Seven)</li>
+              <li class="download-item"><a href="http://b-tk.googlecode.com/files/Mokka-0.6.2_win32.zip">Mokka 0.6.2 (32-bit)</a></li>
+              <li class="download-item"><a href="http://b-tk.googlecode.com/files/Mokka-0.6.2_win64.zip">Mokka 0.6.2 (64-bit)</a></li>
+              <li id="download-mac">MacOS X 10.7+ Intel</li>
+              <li class="download-item"><a href="http://b-tk.googlecode.com/files/Mokka-0.6.2_MacOSX.dmg">Mokka 0.6.2 (64-bit)</a></li>
+              <li id="download-linux">Linux</li>
+              <li class="download-item"><em>No binary available</em></li>
+              <li id="download-package">Source code</li>
+              <li class="download-item"><em>Mokka 0.6.1 is available with the source code of BTK 0.2.1</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="icon">
+      <img class="reflect" src="images/Mokka_256.png"></img>
+    </div>
+  </div>
+  
+  <div class="details-frame">
+    <div class="details">
+      <h3>Features</h3>
+      <h1>Explore your biomechanical data in several ways</h1>
+      <!-- LEFT COLUMN -->
+      <div class="two-cols-left">
+        <div class="two-cols-left-content">
+          <h2>3D visualization</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/view3d-perspective.png" title="Perspective view - The perspective view displays timeseries data in 3D such as markers, force platforms and segments."><img src="images/view3d-perspective-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Perspective view</h3>
+              <p>The perspective view displays timeseries data in 3D such as markers, force platforms and segments.</p>
+              <p>And you can move freely around the data, select markers, display their trajectories or create segments.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/view3d-orthogonal.png" title="Orhogonal view - The orthogonal view gives you access to data only on predefined plane (top, bottom, right, left, front, back)."><img src="images/view3d-orthogonal-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Orthogonal view</h3>
+              <p>The orthogonal view gives you access to data only on predefined plane (top, bottom, right, left, front, back)</p>
+              <p>As with the perspective view, you can play with the data without any restrictions.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/view3d-extra.png" title="Extra visualization - Several options are available to show extra informations in he 3D views."><img src="images/view3d-extra-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Extra visualization</h3>
+              <p>Several options in the 3D views are available to improve the user experience to better understand the kinematic and the kinetic of the acquisition.</p>
+            </div>
+          </div>
+          <h2>Media</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/media-video.png" title="Video view - Combine real and digital data."><img src="images/media-video-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Video</h3>
+              <p>Open video files read natively on your computer. Detected automatically in C3D file format or using the import function.</p>
+              <p>Display synchronized and unsynchronized video. Adapt easily the delay between the loaded acquisition and each video.</p>
+              <br/><br/>
+            </div>
+          </div>
+          <h2>Timeline &amp; events</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/timebar.png" title="Time bar - The time bar provides you all the controls for the playback. The defined events are also displayed and you can interact directly with them."><img src="images/timebar-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Time bar</h3>
+              <p>The time bar provides you all the controls for the playback. You can easily reduce the playback speed, select a region of interest and crop it.</p>
+              <p>The defined events are directly displayed in the time bar. You can easily interact with them to modify their informations.</p>
+            </div>
+          </div>
+          <h2>Views configuration</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/views-config.png" title="User layouts management - Save a layout of views and define it as default to be reloaded at the next launch."><img src="images/views-config-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>User layouts management</h3>
+              <p>Save a layout of views and define it as default to be reloaded at the next launch.</p>
+              <p>Save other layouts and switch between them easily by using shortcuts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT COLUMN -->
+      <div class="two-cols-right">
+        <div class="two-cols-right-content">
+          <h2>2D chart</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/chart2D-point.png" title="Point chart - Plot the components of any 3D data (markers, angles, forces, etc.)."><img src="images/chart2D-point-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Point chart</h3>
+              <p>Plot the components of any 3D data (markers, angles, forces, etc.). Focus only on the component(s) of interest.</p>
+              <p>Mokka can easily stack the plotted data by a simple drag and drop.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/chart2D-analog-collapsed.png" title="Collapsed analog chart - Plot analog data in a collapsed way to easily compare them."><img src="images/chart2D-analog-collapsed-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Collapsed analog chart</h3>
+              <p>Plot analog data in a collapsed way to easily compare them. Zoom from different way to analyze the information of interest.</p>
+              <p>For each plot, you can easily modify its color or line width. Each chart can be clearly distinguishable by adding a title.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/chart2D-analog-expanded.png" title="Expanded analog chart - To distinguish more easily the analog signals between them."><img src="images/chart2D-analog-expanded-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Expanded analog chart</h3>
+              <p>If you prefer to separate the analog signals, then by a single click spread them. Want to go back to the stacked view? Let's click again!</p>
+              <p>The events but also the current frame played are visible as vertical lines.</p>
+            </div>
+          </div>
+          <h2>File I/O</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/import-assistant.png" title="Import assistant - Easily merge files together to create a complete acquisition with all of the data of interest."><img src="images/import-assistant-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Import assistant / Export</h3>
+              <p>Need to collaborate with another team, but your hardware is not the same? Simply import your files into Mokka and focus on your main task: the analysis of valuable data.</p>
+              <p>Easily merge files together to create a complete acquisition with all of the data of interest.</p>
+            </div>
+          </div>
+          <h2>Data accessibility</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/model-panel.png" title="Acquisition explorer - Explore easily the content of the loaded acquisition."><img src="images/model-panel-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Acquisition explorer</h3>
+              <p>Explore easily the content of the loaded acquisition. Modify the properties of the markers, create new segments, remove data, and much more by simple clicks.</p>
+              <p>The model panel can load Mokka model configuration file (MVC) as well as Vicon model configuration files (VSK/VST).</p>
+            </div>
+          </div>
+          <h2>Settings</h2>
+          <div class="feature">
+            <div class="feature-visual">
+              <a class="grouped" rel="group1" href="images/view3d-preferences.png" title="Preferences / Options - Set the default properties for the visualization of the 3D objects."><img src="images/view3d-preferences-small.png" alt="group1"/><div class="mag-glass"></div></a>
+            </div>
+            <div class="feature-text">
+              <h3>Preferences / Options</h3>
+              <p>Set the default properties for the visualization of the 3D objects. All of the properties are updated in every 3D views.</p>
+              <p>The general preferences provide also an option for the default orientation of the ground.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Powered by the open-source library <a href="http://b-tk.googlecode.com" onclick="window.open('http://b-tk.googlecode.com', '_blank'); return false;">Biomechanical ToolKit</a> (BTK)</p>
+    <p>Copyright &copy; Arnaud Barré, 2011-2013. All rights reserved.</p>
+  </div>
+  
+  <!-- User Invoice widget -->
+  <script type="text/javascript">
+    var uvOptions = {};
+    (function() {
+      var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+      uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/ACnmabHJXEjgr2FPxTgCSA.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+    })();
+  </script>
+</body>
+</html>

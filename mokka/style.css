@@ -1,0 +1,517 @@
+/* ------------------------------------------------------------------------- */
+/*                                 General                                   */
+/* ------------------------------------------------------------------------- */
+body {
+  padding:0px;
+  margin:0px;
+  background-color:rgb(222,226,231);
+  -webkit-font-smoothing:subpixel-antialiased;
+  -webkit-text-size-adjust:none;
+  font-family:'Helvetica Neue',Arial,Helvetica,'Liberation Sans',FreeSans,sans-serif;
+  color:#43464A;
+}
+
+a {
+  color:#2D76B9;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+a:focus {
+  outline:none;
+}
+
+.vspace {
+  height:0.5em;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                Navigation                                 */
+/* ------------------------------------------------------------------------- */
+
+#nav-frame {
+  width:100%;
+  height:40px;
+  display:block;
+  text-align:center;
+  position:relative;
+}
+
+#nav-background {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background:#111;
+  background:-webkit-gradient(linear,left top,left bottom,from(#333),to(#111));
+  background:-moz-linear-gradient(top,#333,#111);
+  background:transparent\9;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333',endColorstr='#111111');
+  box-shadow:0 1px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 1px 2px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.5);
+  border-bottom: 1px solid #888
+}
+
+#nav {
+  margin:0 auto;
+/*  width:1000px;*/
+  text-align:left;
+  font-size:14px;
+}
+
+#nav .nav-menu {
+/*  width:920px;*/
+  margin:0;
+  position:relative;
+}
+
+#nav ul {
+  float:left;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+#nav ul li {
+  margin:0;
+  padding:0;
+  float:left;
+}
+
+#nav ul li a {
+  color:#bababa; 
+  padding:10px 10px;
+  display:block;
+  font-weight:normal;
+}
+
+#nav ul li a:hover {
+  text-decoration:none;
+}
+
+#nav .nav-links {
+  float:right;
+  width:100%;
+}
+
+#nav-items {
+  float:left;
+}
+
+#nav-items li a {
+  margin-right:1px;
+  outline:none;
+}
+
+#nav-items li a:hover {
+  color:#fff;
+}
+
+#nav-items li:first-child a {
+  border-left:none;
+}
+
+#nav-items li:last-child a {
+  border-right:none;
+}
+
+#nav-items .active {
+  color:#00adee;
+  background-color:#111;
+}
+
+#nav #btk {
+  margin-left:10px;
+   margin-right:15px;
+   padding-right:25px;
+   border-right:1px #bababa dashed;
+   height:20px;
+}
+
+#nav #home {
+   padding-left:15px;
+   padding-right:15px;
+}
+
+#nav #support {
+  padding-left:15px;
+   padding-right:15px;
+}
+
+#nav #news {
+  padding-left:15px;
+   padding-right:15px;
+}
+
+#nav #social_buttons {
+  float:right;
+}
+
+#nav #gplusone {
+  float:left;
+  margin-top:10px;
+  margin-right:2px;
+}
+
+#nav #twitter {
+  float:right;
+  margin:10px;
+  width:125px;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                   Show                                    */
+/* ------------------------------------------------------------------------- */
+
+.showoff {
+  width:900px;
+  margin:40px auto 0;
+}
+
+.showoff #intro {
+  float:left;
+}
+
+.showoff #intro-title {
+/*  margin-top:15px;*/
+}
+
+.showoff #intro-text {
+  height:275px;
+  color:#62666C;
+  width:600px;
+}
+
+.showoff #item1 {
+  margin-left:25px;
+}
+
+.showoff #item2 {
+  margin-left:50px;
+}
+
+.showoff #item3 {
+  margin-left:75px;
+}
+
+.showoff #item4 {
+  margin-left:95px;
+}
+
+.showoff #intro-text p {
+  font-size:90%;
+  font-style:italic;
+}
+
+.showoff #intro-download-button {
+  margin-top:40px;
+  margin-left:250px;
+  margin-bottom:30px;
+}
+
+.showoff #icon {
+  float:right;
+/*  margin-right:50px;*/
+}
+
+#downloads {
+  font-size:12pt;
+  width:500px;
+}
+
+#download-win {
+  background:transparent url('images/icon-windows.png') no-repeat left center;
+  padding-left:20px;
+  font-weight:600;
+}
+
+#download-mac {
+  background:transparent url('images/icon-osx.png') no-repeat left center;
+  padding-left:20px;
+  margin-top:10px;
+  font-weight:600;
+}
+
+#download-linux {
+  background:transparent url('images/icon-linux.png') no-repeat left center;
+  padding-left:20px;
+  margin-top:10px;
+  font-weight:600;
+}
+
+#download-package {
+  background:transparent url('images/icon-package.png') no-repeat left center;
+  padding-left:20px;
+  margin-top:10px;
+  font-weight:600;
+}
+
+.download-list {
+  margin:10px;
+  padding:0;
+  list-style:none;
+}
+
+.download-item {
+  background:transparent url("images/download-bullet.gif") no-repeat left center;
+  margin-left:20px;
+  padding-left:20px;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                 Details                                   */
+/* ------------------------------------------------------------------------- */
+
+.details-frame {
+  clear:both;
+  width:100%;
+  position:relative;
+  top:20px;
+  background:#EBEDF0;
+  box-shadow:0 0 4px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 0 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 0 4px rgba(0,0,0,0.5);
+  border-top:1px solid rgb(150,150,150);
+  border-bottom:1px solid rgb(150,150,150);
+}
+
+.details {
+  width:1000px;
+  margin:0 auto;
+  padding:15px;
+  overflow:auto;
+}
+
+.two-cols-left {
+  float:left;
+  width:50%;
+}
+
+.two-cols-left-content {
+  margin-right:15px;
+}
+
+.two-cols-right {
+  float:right;
+  width:50%;
+}
+
+.two-cols-right-content {
+  margin-left:25px;
+}
+
+.feature {
+  float:left;
+  width:100%;
+}
+
+.feature-visual {
+  float:left;
+  margin-right:25px;
+  margin-top:5px;
+}
+
+.mag-glass {
+  position:relative;
+  top:-167px;
+  left:-5px;
+  background:transparent url('images/mag-glass.png') no-repeat left top;
+  width:41px;
+  height:41px;
+}
+
+.feature-visual a img {
+  border:none;
+}
+
+.feature-text {
+  float:left;
+  margin-top:20px;
+  margin-bottom:20px;
+  width:275px;
+  color:#62666C;
+  font-size:90%;
+}
+
+h1 {
+  color:#43464A;
+  font-size:30px;
+  font-weight:500;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:30px;
+  text-transform:uppercase;
+}
+
+h2 {
+  border-bottom:1px solid rgb(180,180,180);
+  color:#43464A;
+  font-size:26px;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-bottom:10px;
+  font-weight:200;
+}
+
+h3 {
+  color:#88929E;
+  font-size:14px;
+  font-weight:200;
+  text-transform:uppercase;
+  margin:0;
+}
+
+h1, h2, h3 {
+  text-shadow:0 1px 1px #999;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                  Button                                   */
+/* ------------------------------------------------------------------------- */
+
+.button {
+  text-align:center;
+  padding:7px 15px;
+  cursor:pointer;
+  text-decoration:none;
+  font-size:12pt;
+  font-weight:normal;
+  text-decoration:none;
+  text-shadow:rgba(0%, 0%, 0%, 0.4) 0px -1px 1px;
+  font-weight:300;
+  color:#eee;
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,.2);
+  -moz-box-shadow:0 1px 2px rgba(0,0,0,.2);
+  box-shadow:0 1px 2px rgba(0,0,0,.2);
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  box-shadow:0 0 5px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 0 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,0.5);
+}
+
+.button:hover {
+  text-decoration:none;
+}
+
+.button:active {
+}
+
+.blue {
+  border:solid 1px #0076a3;
+  background:#0095cd;
+  background:-webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+  background:-moz-linear-gradient(top,  #00adee,  #0078a5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}
+
+.blue:hover {
+  background:-webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+  background:-moz-linear-gradient(top,  #0095cc,  #00678e);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+}
+
+.blue:active {
+  background:-webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+  background:-moz-linear-gradient(top,  #0078a5,  #00adee);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                  Other                                    */
+/* ------------------------------------------------------------------------- */
+
+.image-counter {
+  float:right;
+  color:#555;
+  position:relative;
+  top:-19px;
+}
+
+.image-title {
+  text-align:left;
+  color:#555;
+  font-size:125%;
+  margin-bottom:5px;
+}
+
+.image-desc {
+  text-align:left;
+  color:#555;
+}
+
+#fancybox-wrap {
+  margin-top:-20px;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                   News                                    */
+/* ------------------------------------------------------------------------- */
+
+.news {
+  margin-top:15px;
+  width:100%;
+}
+
+.news-header {
+  float:left;
+  width:100%;
+  border-bottom:1px solid rgb(200,200,200);
+  padding-bottom:5px;
+  margin-bottom:10px;
+}
+
+.news-title {
+  float:left;
+  font-size:140%;
+  font-weight:400;
+}
+
+.news-date {
+  float:right;
+  font-size:80%;
+  margin-top:10px;
+}
+
+.news-text {
+  width:100%;
+  color:#62666C;
+  font-size:90%;
+}
+
+.news-text b {
+  font-weight:400;
+  color:#333;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                  Support                                  */
+/* ------------------------------------------------------------------------- */
+.support {
+  width:100%;
+  color:#62666C;
+  font-size:90%;
+  margin-top:15px;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                  Footer                                   */
+/* ------------------------------------------------------------------------- */
+
+.footer {
+  margin-top:40px;
+  height:60px;
+}
+
+.footer p {
+  font-size:10pt;
+  text-align:center;
+  height:0.75em;
+}

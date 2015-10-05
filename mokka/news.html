@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Mokka, motion kinetic and kinematic analyzer,  powered by BTK, the open-source Biomechanical ToolKit" />
+  <meta name="keywords" content="btk, mokka, mac, windows, linux, vicon, motion analysis, elite, bts bioengineering, viewer, 3d, chart, c3d, trb, trc, anb, anc, ang, emf, emg, mom, pwr, rah, raw, ric" />
+  <title>Mokka - Motion Kinematic &amp; Kinetic Analyzer</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34964654-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+<body>
+  <div id="nav-frame">
+    <div id="nav-background"></div>
+    <div id="nav">
+      <div class="nav-menu">
+        <div class="nav-links">
+          <div id="nav-items">
+            <ul>
+              <li><a id="btk" href="http://code.google.com/p/b-tk/" onclick="window.open('http://b-tk.googlecode.com', '_blank'); return false;">Visit the Google Code project</a></li>
+              <li><a id="home" href="index.html">Home</a></li>
+              <li><a id="support" href="support.html">Support</a></li>
+              <li><a id="news" href="news.html" class="active">News</a></li>
+            </ul>
+          </div>
+          <div id="social_buttons">
+            <div id="gplusone">
+              <!-- Place this tag where you want the +1 button to render. -->
+              <div class="g-plusone" data-size="medium" data-annotation="none" href="http://code.google.com/p/b-tk/"></div>
+              <!-- Place this tag after the last +1 button tag. -->
+              <script type="text/javascript">
+                (function() {
+                  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                  po.src = 'https://apis.google.com/js/plusone.js';
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </div>
+            <div id="twitter">
+              <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                src="//platform.twitter.com/widgets/follow_button.html?screen_name=btkwww&button=grey&show_count=false" style="width:130px; height:20px;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="details-frame">
+    <div class="details">
+      <h3>What's new for Mokka?</h3>
+      <div class="vspace"></div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.6.2
+          </div>
+          <div class="news-date">
+            May 7, 2013
+          </div>
+        </div>
+        <div class="news-text">
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>Improvement of the message when an error occured during the update of the software. A link is proposed to manually download the new release.</li>
+              <li>Cancel button displayed to abort the update when the package is downloaded.</li>
+              <li>Message related to the status of the update improved.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>The updater downloads everytime the package of the last item instead of the one for the OS of the user.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.6.1
+          </div>
+          <div class="news-date">
+            May 6, 2013
+          </div>
+        </div>
+        <div class="news-text">
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>3D content now scaled for acquisition's data set in inches.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>Issue #46: Infinite loop during the creation of a segment in Mokka 0.6.</li>
+              <li>Issue #48: Saving a file which is not a C3D file opens every time the save as dialog box.</li>
+              <li>Issue #57: Wrong modification of the analog scales in the C3D file format.</li>
+              <li>Issue #60: Event's labels used in cycles definition are not updated.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.6
+          </div>
+          <div class="news-date">
+            February 16, 2013
+          </div>
+        </div>
+        <div class="news-text">
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>New file format: XMOVE (Thanks to the company Codamotion)</li>
+              <li>New file format: MDF (Thanks to the company Codamotion)</li>
+              <li>New file format: Delsys EMG (Thanks to the company Delsys).</li>
+              <li>New file format: CLB (Contec Inc.).</li>
+              <li>New plot options to draw cyclic data into a chart.</li>
+              <li>New update manager: you won't need to go on the net, close Mokka, download the new release, unzip it and copy it. Everything is automatic!</li>
+              <li>New menu "Tools" to regroup all the editing actions (reframe, clear events, etc.).</li>
+              <li>New tool to create an average marker from a selection of markers (real or virtual).</li>
+              <li>New tool to detect heel strike and toe off events during gait.</li>
+              <li>New tool "Filter Analog (Butterworth)"</li>
+              <li>New tool to smooth analog signal using moving RMS windows and moving average window.</li>
+              <li>New tool to rectify the content of analogs channels.</li>
+              <li>New tool to remove analog offset.</li>
+              <li>New category in the acquisition explorer to show "Virtual markers" (useful for Vicon C3D file).</li>
+              <li>New static way to add markers in the category "Virtual markers".</li>
+              <li>New function "Reset all Zooms" in the context menu of the charts views. Set all charts' axes to their original range.</li>
+              <li>The list of filters (extensions) in the open/save dialog box box is now sorted.</li>
+              <li>New preference to set the back color of the ground.</li>
+              <li>New reload button as suggested on UserVoice.</li>
+              <li>New shortcuts to insert events (Alt 1-9).</li>
+              <li>Create an option in the import assistant for videos only.</li>
+              <li>Move automatically the time cursor when you click on the time bar.</li>
+              <li>Option to change the background color.</li>
+              <li>Record the position (pose and zoom) of 3d windows.</li>
+              <li>Display the angle between two vectors.</li>
+              <li>Display the angle between three points.</li>
+              <li>Display the distance between 2 markers.</li>
+              <li>New assistant to create segment as a set of links and faces.</li>
+              <li>Add an export assistant to save any data in an ASCII file.</li>
+              <li>New exporter to create STL files from a selected segment.</li>
+              <li>New function to export 3D view as series of images.</li>
+              <li>New action (File > Open File Location) to open the folder which contains the current acquisition.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>Improvement of the C3D parser to be more flexible in the extraction of the parameters' data.</li>
+              <li>The ground orientation for the TDF files is now automatically set (i.e Y axis vertical) as it seems to be the general behavior.</li>
+              <li>The use of the Alt key in a chart view synchronize the mouse events (zoom, move) for all the charts inside!</li>
+              <li>The menu to modify the playback speed is available even if no acquisition is loaded.</li>
+              <li>The horizontal axis unit menu is also available in the contextual menu of each chart. Shortcuts were also added.</li>
+              <li>The root for the model outputs and the force platform reactions in the acquisition explorer are now every time expanded if visible.</li>
+              <li>The item's roots (Markers, Analogs, etc.) in the acquisition explorer are automatically expanded if only one is visible.</li>
+              <li>If a plot has less than 40 points displayed, then a circle marker at each point is also displayed.</li>
+              <li>The tests on files existence were moved from the loading of Mokka to potentially speedup the starting of the software.</li>
+              <li>If the range of the Y axis in a chart is zero, then the range is increased by [-0.01:0.01].</li>
+              <li>The maximum width of the acquisition explorer is increased under windows and linux. Under Mac this function is broken due to a bug.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>Removing a visual configuration and creating a new one crashes Mokka.</li>
+              <li>Analogs' unit is not saved in the C3D file format.</li>
+              <li>Issue 13: The rubber band in the 3D view is not correctly redrawn.</li>
+              <li>The implementation of the writer for the TRC file format exports every points and not only markers.</li>
+              <li>The content of the logger is wrongly painted/styled when Mokka loses focus.</li>
+              <li>With two screens and Mokka on the second one, plots' options are not correctly located or not visible.</li>
+              <li>Loading first a file, and then using the assistant doesn't display "No File" in the window title bar.</li>
+              <li>Fix segment's flickering when a configuration is loaded and some segments are hidden.</li>
+              <li>Wrong path when saving a file for the second time.</li>
+              <li>The menu to modify the playback speed and the menu to insert events are disabled.</li>
+              <li>Impossible to see the delete buttons used to delete plots (in chart/plots options) if the acquisition explorer is in floating mode.</li>
+              <li>In the time event bar, the labels' tick can overlap on the other when the unit is the time.</li>
+              <li>Using the action "Manage User Layout" under Windows (and Linux?) doesn't show the chosen tab.</li>
+              <li>Potential fix for a random bug in Mokka (GRFs are not reloaded and a buffer overflow happens if the new acquisition is longer).</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+             Special session "<em>engineer meeting</em>" with BTK and Mokka during the <em>SOFAMEA 2013</em>
+          </div>
+          <div class="news-date">
+            January 2, 2013
+          </div>
+        </div>
+        <div class="news-text">
+          <p>We will have one hour to present the next releases of BTK (0.2) and Mokka (0.6). We will discuss also about the continuation of the project (January 23rd 2013, 17:30-18:30).</p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.5.1
+          </div>
+          <div class="news-date">
+            April 16, 2012
+          </div>
+        </div>
+        <div class="news-text">
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>Dragging any kind of item (except video) over the video view hides the current displayed video.</li>
+              <li>Clearing a chart for a cropped acquisition reset the zoom.</li>
+              <li>Switching between collapsed and expanded analog chart with a cropped acquisition reset the bounds of the chart.</li>
+              <li>Mokka 0.5 introduced a bug where it is no more possible to modify the frame of the edited event(s).</li>
+              <li>Packaging Mokka under MacOS X doesn't install the phonon backend for quicktime (issue <a href="http://code.google.com/p/b-tk/issues/detail?id=29">29</a>).</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.5
+          </div>
+          <div class="news-date">
+            April 11, 2012
+          </div>
+        </div>
+        <div class="news-text">
+          <p>Mokka is now able to show video files!</p>
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>Watch any video<a href="#video-foonote">*</a> joined to an acquisition.</li>
+              <li>Import video<a href="#video-foonote">*</a> files (AVI, MOV, MPEG, OGG, WMV)</li>
+              <li>New readable TDF file format (BTS Bioengineering).</li>
+              <li>New readable AMTI forceplate file format (ASC - FxFyFzMxMyMz file).</li>
+              <li>View ground reaction force butterfly (as proposed by <a href="http://www.ncbi.nlm.nih.gov/pubmed/3361599">Khodadadeh</a>, 1998).</li>
+              <li>View ground reaction force path.</li>
+              <li>New computed angle for the force platform: Direction angle of the force vector.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>Time bar event can display <em>frame</em> (default) or <em>time</em>. Default setting available in the preferences.</li>
+              <li>Unit for the horizontal axis of the charts can be set to <em>frame</em> (default) or <em>time</em>.</li>
+              <li>New preferences for the charts.</li>
+              <li>New preferences to display ground reaction force butterfly and path.</li>
+              <li>New dialog box to save a layout (create a new one or save it on an existing one).</li>
+              <li>New dialog box for the visual configuration saving option.</li>
+              <li>Importing acquisitions enabled now the save action (not only the "save as").</li>
+              <li>Improving the way to save an acquisition. Especially if there is no filename or the current file extension is not supported.</li>
+              <li>The collapse of the properties in the acquisition explorer reduces also their size to go down.</li>
+              <li>Model pane renamed Acquisition explorer.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>Re-saving causes change in units in Mokka (issue <a href="http://code.google.com/p/b-tk/issues/detail?id=22">22</a>).</li>
+              <li>Perspective view loses content upon rotation (issue <a href="http://code.google.com/p/b-tk/issues/detail?id=21">21</a>).</li>
+              <li>Cropping the region of interest in the time bar doesn't crop the charts.</li>
+              <li>Cropping an acquisition and dropping an item into a chart reset the bounds of its X axis.</li>
+              <li>Zooming and cropping an acquisition doesn't reset the zoom action.</li>
+              <li>VSK/VST file without any model name cannot be loaded.</li>
+              <li>VSK/VST file with an empty model name append an empty row in the combobox.</li>
+              <li>Cropping and reframing an acquisition several time doesn't work.</li>
+              <li>Moving an event and trying to undo this action doesn't reset correctly the event's frame.</li>
+              <li>The XLS extension is not in the filter used for the "Open" action.</li>
+              <li>Trying to import an EMG file from the Import assistant doesn't open the dialog box to select a file.</li>
+              <li>Clicking on an event in the timebar highlights the line representing it in the visible charts only for the first time.</li>
+              <li>Clicking on the action "Import > EMF files..." does nothing.</li>
+              <li>Trying to write a file with an extension not supported leads to an error. Now open a "Save as" dialog.</li>
+              <li>The action "Reframe from one" is enabled even if the first frame is equal to 1.</li>
+            </ul>
+          </p>
+          <p id="video-footnote">
+            * Mokka does not provide any video codec but rely on the ones installed on your computer. The video feature uses <a href="http://phonon.kde.org/">Phonon</a> which depends on backends. Mokka requires then DirectShow (which requires DirectX) on Windows, QuickTime on Mac, and GStreamer on Linux.
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+             Special session "<em>engineer meeting</em>" with BTK and Mokka during the <em>SOFAMEA 2012</em>
+          </div>
+          <div class="news-date">
+            December 28, 2011
+          </div>
+        </div>
+        <div class="news-text">
+          <p>We have several keynotes around BTK and Mokka to show their progress, their future development and how they can be used in clinical gait analysis (January 12th 2012, 18:00-19:00).</p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.4
+          </div>
+          <div class="news-date">
+            December 09, 2011
+          </div>
+        </div>
+        <div class="news-text">
+          <p>Mokka is now able to plot acquisition's data in 2D Charts!</p>
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>Chart viewer to display analog signals and components of points (markers, angles, forces, etc.) into 2D plots.</li>
+              <li>Export plot to bitmap images.</li>
+              <li>Console logger to display all the messages coming from Mokka or its dependencies.</li>
+              <li>New Layout Manager to save and load the layout of the views and their properties.</li>
+              <li>New items in the model pane to represent force platform reactions (force, moment, position).</li>
+              <li>Acquisition can now be reframed from the index 1. The events are adapted in consequence.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>Sticks used to display segments are now wider (line width set to 2).</li>
+              <li>Improvement in the memory management of the views.</li>
+              <li>UI modified for the checker of update when there is no update or when an error occurred.</li>
+              <li>The axes used to show the orientation of the 3D view are scaled to have a fixed and squared size.</li>
+              <li>Actions in the model configuration menu (gear button) were splitted. All the actions related to the model tree are in a contextual menu.</li>
+              <li>The model panel is no more hidden and then shown when an acquisition is loaded (and the model panel is already visible).</li>
+              <li>Acquisition file formats containing only analog data can be opened directly.</li>
+              <li>Menu actions updated to be able to import RIF file and export force platform CAL file.</li>
+              <li>(MacOS X only) The preferences window under MacOS X seems native (animation for height, zoom button disabled, no toolbar button, no resize indicator).</li>
+              <li>(Windows only): Windows VersionInfo are now set for Mokka.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>List of markers stated as visible into the model pane is wrong under Windows 7 64-bit (issue 14)</li>
+              <li>If the unit for the markers is set to meter in the first loaded acquisition, then the coordinates are not correctly scaled.</li>
+              <li>In some case in the 3D perspective view, the camera is translated instead of rotated when switching from another application (using the key sequence Alt + Tab).</li>
+              <li>Checker of update can be wrongly triggered with alpha release number.</li>
+              <li>(MacOS X only) Under MacOS X, the shortcut Command + M is used to minimize the application. The shortcut used to view the model panel is now set to Command + Shift + M (only under MacOS X).</li>
+              <li>Minor UI fixes</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Workshop on BTK and Mokka during the ISB2011!
+          </div>
+          <div class="news-date">
+            June 27, 2011
+          </div>
+        </div>
+        <div class="news-text">
+          <p>We are very proud to announce that the committee for the International Society of Biomechanics (ISB) congress 2011 proposed us to present the development of BTK and Mokka during a workshop of 2 hours titled
+          <em>BTK: An open-source Biomechanical Tool Kit</em> (Wednesday, July 6th, 15:45-17:45) <a href="http://www.isb2011.org/satellite.html">link</a>.</p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.3
+          </div>
+          <div class="news-date">
+            June 16, 2011
+          </div>
+        </div>
+        <div class="news-text">
+          <p>The development of Mokka still continue with several new features and updates, as well as fixes to improve the user interactions.</p>
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>User preferences panel added.</li>
+              <li>Visualization of segments added. You can add/remove/edit segments' informations (links, label, descriptions, color). The segment definitions is saved in the Model Visualization Configuration (MVC) file. Undo/Redo support. Preferences for the default segment color added.</li>
+              <li>Mokka is able to load Vicon VST/VSK files to configure models.</li>
+              <li>New option to check software update.</li>
+              <li>Tutorials integrated into the documentation.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>New option to select the length of the markers' trajectory.</li>
+              <li>New submenu in "Settings" and in the display configuration button to select the length of the marker trajectory. By default the length is set to 100 frames.</li>
+              <li>Camera configuration saved and reloaded when switching between perspective and orthogonal projection.</li>
+              <li>Icon for the markers in the model pane rotated.</li>
+              <li>Use BTK 0.1.8.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>The visual configuration unselected is still loaded when opening another acquisition.</li>
+              <li>In some case, a subtick appears close to each stick in the time event bar.</li>
+              <li>Wrong orthogonal planes when the global up vector is not Z.</li>
+              <li>Importing an erroneous file leads to set the window as modified.</li>
+              <li>Using the import assistant, all the markers are set as hidden in the dock (only after the loading).</li>
+              <li>Width of the file information panel is not adapted when importing data (all infos are set to N/A).</li>
+              <li>The first marker for the first frame is every time set as invalid and is not displayed.</li>
+              <li>When inserting an event under MacOS X, the end of the letters 'j' and 'p' is not displayed.</li>
+              <li>Corrupted model configuration (file not found) is removed but can load another configuration in the list.</li>
+              <li>Loading a model configuration from another one doesn't reset radius and color for markers not specified in the new model.</li>
+              <li>Loading a dropped file doesn't check if the model configuration is modified or not.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.2
+          </div>
+          <div class="news-date">
+            February 12, 2011
+          </div>
+        </div>
+        <div class="news-text">
+          <p>A new release of Mokka just came out! This release brings several major modifications in the UI. After several months spent to design new Qt widgets, we are proud to announce this new release.</p>
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>Multiple views added.</li>
+              <li>Orthogonal projection added.</li>
+              <li>New dock widget to show acquisition's data (markers, analog channels, angles, etc.).</li>
+              <li>New widget for the timeline and the events.</li>
+              <li>Staying over a marker in the 3D view will show a balloon with its label.</li>
+              <li>Import / export actions.</li>
+              <li>Assistant to import files categorized by company.</li>
+              <li>Rubber band added to select markers in the 3D view.</li>
+              <li>New keyboard shortcut and mouse interaction (check the help).</li>
+              <li>Help added.</li>
+              <li>Icon added.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Performance Improvements</b>
+            <ol>
+              <li>Loading time to create 3D objects reduced.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>Camera interaction improved for a better user experience.</li>
+              <li>Loading time to create 3D objects reduced.</li>
+              <li>File's format read and saved updated.</li>
+              <li>New FileInfo dock.</li>
+              <li>Loading a new acquisition will try to load a visual configuration based on the file name.</li>
+              <li>Contextual menus added in the 3D view and the time bar</li>
+              <li>Use BTK 0.1.7.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>Several UI fixes.</li>
+            </ul>
+          </p>
+        </div>
+      </div>  
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+             Round-table conference with BTK and Mokka during the <em>SOFAMEA 2011</em>
+          </div>
+          <div class="news-date">
+            December 15, 2010
+          </div>
+        </div>
+        <div class="news-text">
+          <p>We are invited for a round-table conference on the <em>Développement et partage d'outils pour l'AQM</em> (Friday, January 21st, 17:00-18:00) during the <em>10es Journ&eacute;e de la SOFAMEA 2001</em> (<a href="http://www.technimediaservices.fr/NOUVEAUSITE/evenement/mainframe/sofamea2011/index.php">link</a>).</p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.1 alpha 4
+          </div>
+          <div class="news-date">
+            June 10, 2010
+          </div>
+        </div>
+        <div class="news-text">
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>Drag and drop support for Mokka.</li>
+              <li>New widget to show the loading progress of a file.</li>
+              <li>It is now possible to create/save/load a visual configuration for the marker.</li>
+              <li>Addition of command line options (open an acquisition, load a visual configuration, play the acquisition).</li>
+              <li>New menus to deselect the current visual configuration and clear the list of the visual configurations.</li>
+              <li>Markers trajectory can be displayed (click on the icon at the left of the marker's label).</li>
+            </ol>
+          </p>
+          <p>
+            <b>Usability Improvements</b>
+            <ol>
+              <li>Virtual markers are now distinguished and removed in the case where they are used for segmental frame axes. Other virtual markers are listed but not visible by default.</li>
+              <li>Lines in the 3D view are now smoothed for a better rendering.</li>
+              <li>The undo/redo is enhanced by splitting the actions between the modification of an acquisition file and the modification of the visual configuration.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>Menu Options > Edit Metadata renamed Options > View Metadata as it is not possible to edit them.</li>
+              <li>Open/Save dialogs use native dialogs.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+            
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.1 alpha 3
+          </div>
+          <div class="news-date">
+            October 16, 2009
+          </div>
+        </div>
+        <div class="news-text">
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>Markers trajectory can be displayed (click on the icon at the left of the marker's label).</li>
+              <li>Modification of acquisition data (points and events) with undo/redo support.</li>
+              <li>An acquisition can be saved in C3D or TRC format.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ol>
+              <li>Menu Options > Edit Metadata renamed Options > View Metadata as it is not possible to edit them.</li>
+              <li>Open/Save dialogs use native dialogs.</li>
+            </ol>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Release Notes for 0.1 alpha 2
+          </div>
+          <div class="news-date">
+            September 10, 2009
+          </div>
+        </div>
+        <div class="news-text">
+          <p>A new version is available for download</p>
+          <p>
+            <b>New Features</b>
+            <ol>
+              <li>The FPS (frame per second) widget is replaced by the display of the 3D global axes</li>
+              <li>Metadata are displayed in a modal window (see menu Options > Edit Metadata).</li>
+              <li>Events information and markers properties can be collapsed.</li>
+            </ol>
+          </p>
+          <p>
+            <b>Issues resolved</b>
+            <ul>
+              <li>Executing Mokka on Windows opens a command prompt.</li>
+              <li>C3D data with POINTS:UNITS in meters drawn in millimeters (<a href="http://code.google.com/p/b-tk/issues/detail?id=1&can=1">Issue 1</a>).</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      
+      <div class="news">
+        <div class="news-header">
+          <div class="news-title">
+            Introducing Mokka
+          </div>
+          <div class="news-date">
+            August 24, 2009
+          </div>
+        </div>
+        <div class="news-text">
+          <p>A new project based on the code of <a href="http://b-tk.googlecode.com">BTK</a> is born. Its goal is to use widely the modules of BTK and especially the <a href="http://b-tk.googlecode.com/svn/doc/API/0.1/group___b_t_k_v_t_k.html">BTKVTK</a> module.</p>
+          <p>Its source code will be integrated directly into BTK. This is a cross-platform GUI application and it uses the great of <a href="http://qt.nokia.com/">Qt</a> library to do it.</p>
+          <p>This first initial alpha release (0.1a1) is able to visualize the markers in a 3D view and are listed in a panel on the side. You can select the visualized frame with the slider on the bottom of the window. The playback button starts and stops the acquisition.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Powered by the open-source library <a href="http://b-tk.googlecode.com" onclick="window.open('http://b-tk.googlecode.com', '_blank'); return false;">Biomechanical ToolKit</a> (BTK)</p>
+    <p>Copyright &copy; Arnaud Barré, 2011-2013. All rights reserved.</p>
+  </div>
+</body>
+</html>
