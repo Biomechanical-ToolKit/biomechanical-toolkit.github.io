@@ -1,0 +1,109 @@
+---
+layout: post
+title:  "DevLog 09.2015"
+date:   2015-10-06 21:25
+categories: btk devlog
+---
+
+Another month passed and new progresses were realized on the new API. All the code to create filters, link them together, and run a pipeline is available!<!--more-->
+
+###Examples with the new API###
+
+**WARNING**: The following examples wants to illustrate the new syntax. Some classnames representing algorithms might not be implemented or could be modified later. 
+
+####File converter####
+
+One of the simplest but very useful pipeline is the conversion of file formats. The following code snippet show the C++ code needed to create such converter.
+
+{% highlight cpp %}
+// Creation of a pipeline to transform a file format to another
+
+#import <btkTrialFileReader.h>
+#import <btkTrialFileWriter.h>
+
+void convertFile(const std::string& in, const std::string& out)
+{
+  // Create the reader used for the 'in' file
+  btk::TrialFileReader reader;
+  // Create the writer used for the 'out' file
+  btk::TrialFileWriter writer;
+  // Link the reader and the writer
+  writer.setInput(reader.output());
+  // Sets the filename.
+  reader.setFilename(in);
+  writer.setFilename(out);
+  // Internally, the reader first parse the content of the 'in' file.
+  // Based on the signature of the file, the appropriate parser is selected
+  // Then, the extracted data are passed to the writer.
+  // Based on the file extension provided in the 'out' filename, the
+  // appropriate parser is selected and a new file will be created (or replaced)
+  writer.update();
+}
+{% endhighlight %}
+
+####Batch file converter####
+
+To go further with the previous example, you can image to create a batch to convert several files. Traditionally, it means to loop some code. However, the new pipeline will handle that automatically. The data passed through each algorithm composing the pipeline can be multi-nodal (e.g. pass several trials at the same time). Based on the configuration of each algorithm these nodes can be processed independently or together.
+
+{% highlight cpp %}
+// Creation of a pipeline which can work as a batch process
+#import <btkTrialFileReader.h>
+#import <btkTrialFileWriter.h>
+
+void convertFileBatch(const std::vector<std::string>& in, const std::vector<std::string>& out)
+{
+  // As before, a reader and a writer are created and linked together
+  btk::TrialFileReader reader;
+  btk::TrialFileWriter writer;
+  writer.setInput(reader.output());
+  // The difference with the previous example is that you pass vectors of filenames
+  reader.setFilenames(in);
+  writer.setFilenames(out);
+  // All the processing is done internally. The reader will parse each file and 
+  // store the result in a node. Then all these nodes are passed to the writer.
+  // Each node is then written to a new file.
+  writer.update();
+}
+{% endhighlight %}
+
+####Files fusion####
+
+Another example coming from BTK-0.x is the fusion of files together. For example the fusion of a set of files coming from an acquisition realized with a Motion Analysis system (ANB, TRB, CAL, XLS) to a C3D file requires few lines of code.
+
+{% highlight cpp %}
+// Creation of a pipeline to merge motion analysis files and export the result to a C3D file
+#import <btkTrialFileReader.h>
+#import <btkTrialFileWriter.h>
+#import <btkTrialsMerger.h>
+
+void mergeFiles(const std::string& outC3D, const std::string& inANB, const std::string& inTRB,
+                const std::string& inCAL, const std::string& inXLS)
+{
+  // Readers, merger, and writer are created
+  btk::TrialFileReader readerANB, readerTRB, readerCAL, readerXLS;
+  btk::TrialFileWriter writerC3D;
+  btk::TrialsMerger merger;
+  // All the readers are connected to the merger
+  merger.addInput(readerANB.output())
+  merger.addInput(readerTRB.output())
+  merger.addInput(readerCAL.output())
+  merger.addInput(readerXLS.output())
+  writer.setInput(merger.output());
+  // Sets the filename
+  readerANB.setFilename(inANB);
+  readerTRB.setFilename(inTRB);
+  readerCAL.setFilename(inCAL);
+  readerXLS.setFilename(inXLS);
+  writer.setFilename(outC3D);
+  // Finally, the update of the writer will trigger the other algorithms and
+  // will generate a C3D which will combine the content of the input files.
+  writer.update();
+}
+{% endhighlight %}
+
+Imagine this filter with vector of files. It will simplify the work of the programmer to create a batch to merge files together.
+
+####More advanced examples to come####
+
+The previous examples were presented to show the syntax of the new API and to illustrate the simplicity of the creation of a pipeline. During the next months, more algorithms will be implemented which will focus on the generation of the output used in a clinical gait analysis (model configuration, model calibration, model reconstruction, joint kinematics, joint kinetics, event detection, etc.). This will give the possibility to create very powerful data processing in few minutes!
+
