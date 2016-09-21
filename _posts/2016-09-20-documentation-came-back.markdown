@@ -9,7 +9,7 @@ The documentation of the API (C++, Matlab, Python) finally arrived on the GitHub
 
 The following links give you access to it: 
 
-  - C++: http://biomechanical-toolkit.github.io/docs/API/ 
-  - Matlab: http://biomechanical-toolkit.github.io/docs/Wrapping/Matlab/ 
-  - Python: http://biomechanical-toolkit.github.io/docs/Wrapping/Python/ 
+  - [C++](http://biomechanical-toolkit.github.io/docs/API/) 
+  - [Matlab](http://biomechanical-toolkit.github.io/docs/Wrapping/Matlab/)
+  - [Python](http://biomechanical-toolkit.github.io/docs/Wrapping/Python/)  
 
