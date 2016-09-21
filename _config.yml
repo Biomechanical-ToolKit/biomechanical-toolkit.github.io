@@ -5,7 +5,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://biomechanical-toolkit.github.io" # the base hostname & protocol for your site
 permalink: /news/:year/:month/:day/:title/
 twitter_username: btkwww
-github_username:  biomechanical-toolkit
+github_username: biomechanical-toolkit
 
 highlighter: pygments
 excerpt_separator: <!--more-->
