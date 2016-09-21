@@ -5,8 +5,6 @@ date:   2016-08-29 11:05
 categories: btk openma
 ---
 
-Dear users, 
-
 Since 2009, the project BTK helped lots of people to simplify data management and accelerate their development. In 2015, during the [33rd ISBS congress](https://isbs2015.sciencesconf.org), I announced the future of BTK with the integration of biomechanical models (e.g. computation of joint kinetics and kinematics using conventional models like Plug-in Gait or Helen Hayes). 
 
 One year later, this comes true!<!--more-->
