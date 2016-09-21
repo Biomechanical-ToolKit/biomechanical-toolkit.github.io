@@ -7,7 +7,7 @@ permalink: /news/:year/:month/:day/:title/
 twitter_username: btkwww
 github_username: biomechanical-toolkit
 
-highlighter: pygments
+highlighter: rouge
 excerpt_separator: <!--more-->
 
 # Build settings
