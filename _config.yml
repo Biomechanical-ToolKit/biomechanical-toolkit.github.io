@@ -12,3 +12,4 @@ excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
+include: docs # For Doyxgen filename starting with a underscore
