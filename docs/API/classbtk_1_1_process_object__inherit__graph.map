@@ -1,0 +1,22 @@
+<map id="btk::ProcessObject" name="btk::ProcessObject">
+<area shape="rect" id="node3" href="$classbtk_1_1_acquisition_file_reader.html" title="Reader for files which contain acquisition data (C3D, TRC, ...). " alt="" coords="343,6,519,34"/>
+<area shape="rect" id="node4" href="$classbtk_1_1_acquisition_file_writer.html" title="Writer of acquisition data into acquisition file (C3D, TRC, ...). " alt="" coords="347,58,515,86"/>
+<area shape="rect" id="node5" href="$classbtk_1_1_acquisition_unit_converter.html" title="Convert the units of the given input for points and analog channels. " alt="" coords="334,110,527,138"/>
+<area shape="rect" id="node6" href="$classbtk_1_1_analog_offset_remover.html" title="Remove a possible analog offset to the selected analog channels. " alt="" coords="342,162,519,190"/>
+<area shape="rect" id="node7" href="$classbtk_1_1_a_s_c_i_i_file_writer.html" title="Writer of acquisition data into ASCII/Text file. " alt="" coords="362,214,500,242"/>
+<area shape="rect" id="node8" href="$classbtk_1_1_collection_assembly.html" title="Group together a set of collections of the same type. " alt="" coords="334,266,527,294"/>
+<area shape="rect" id="node9" href="$classbtk_1_1_downsample_filter.html" title="Downsample data stored in the given input. " alt="" coords="339,318,523,346"/>
+<area shape="rect" id="node10" href="$classbtk_1_1_force_platforms_extractor.html" title="Extracts force platform data from a btk::Acquisition object. " alt="" coords="336,370,526,398"/>
+<area shape="rect" id="node11" href="$classbtk_1_1_force_platform_wrench_filter.html" title="Calcule the wrench of the center of the force platform data, expressed in the global frame (by defaul..." alt="" coords="343,422,519,466"/>
+<area shape="rect" id="node13" href="$classbtk_1_1_i_m_us_extractor.html" title="Extracts inertial measurement units (IMUs) from a btk::Acquisition object. " alt="" coords="365,490,496,518"/>
+<area shape="rect" id="node14" href="$classbtk_1_1_measure_frame_extractor.html" title="Extracts a frame from a collection of btk::Measure objects. " alt="" coords="320,542,541,570"/>
+<area shape="rect" id="node15" href="$classbtk_1_1_merge_acquisition_filter.html" title="Merges or concatenates two or more btk::Acquisition objects into a single new one. " alt="" coords="341,594,520,622"/>
+<area shape="rect" id="node16" href="$classbtk_1_1_multi_s_t_l_file_writer.html" title="Writer of acquisition data into multiple STL binary file format. " alt="" coords="353,646,509,674"/>
+<area shape="rect" id="node17" href="$classbtk_1_1_separate_known_virtual_markers_filter.html" title="Separate a collection of points in five categories to be able to distinguish real markers from the ot..." alt="" coords="341,698,520,742"/>
+<area shape="rect" id="node18" href="$classbtk_1_1_specialized_points_extractor.html" title="Extracts only the points corresponding to the given type (without cloning the extracted points)..." alt="" coords="328,766,533,794"/>
+<area shape="rect" id="node19" href="$classbtk_1_1_sub_acquisition_filter.html" title="Extract a subpart of the acquisition. " alt="" coords="348,818,513,846"/>
+<area shape="rect" id="node20" href="$classbtk_1_1_vertical_ground_reaction_force_gait_event_detector.html" title="Detect heel strike and toe&#45;off events during gait from vertical ground reaction wrench. " alt="" coords="337,870,524,914"/>
+<area shape="rect" id="node21" href="$classbtk_1_1_wrench_direction_angle_filter.html" title="Calculate the direction angle of the force vector for each wrench. " alt="" coords="341,938,520,982"/>
+<area shape="rect" id="node2" href="$classbtk_1_1_object.html" title="Base for all objects which need to keep track of modified time. " alt="" coords="5,461,91,489"/>
+<area shape="rect" id="node12" href="$classbtk_1_1_ground_reaction_wrench_filter.html" title="Transform force platform data into ground reaction wrenches. " alt="" coords="589,422,779,466"/>
+</map>

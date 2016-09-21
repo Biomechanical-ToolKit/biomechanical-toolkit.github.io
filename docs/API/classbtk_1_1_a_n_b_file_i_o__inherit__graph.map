@@ -1,0 +1,4 @@
+<map id="btk::ANBFileIO" name="btk::ANBFileIO">
+<area shape="rect" id="node2" href="$classbtk_1_1_motion_analysis_binary_file_i_o.html" title="Acquisition IO abstract class used for the Motion Analysis ANB/TRB file format. " alt="" coords="5,83,179,127"/>
+<area shape="rect" id="node3" href="$classbtk_1_1_acquisition_file_i_o.html" title="Interface to read/write acquisition&#39;s files. " alt="" coords="19,6,164,34"/>
+</map>

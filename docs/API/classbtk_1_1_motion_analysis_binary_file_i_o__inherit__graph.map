@@ -1,0 +1,5 @@
+<map id="btk::MotionAnalysisBinaryFileIO" name="btk::MotionAnalysisBinaryFileIO">
+<area shape="rect" id="node3" href="$classbtk_1_1_a_n_b_file_i_o.html" title="Interface to read/write ANB files. " alt="" coords="5,177,115,205"/>
+<area shape="rect" id="node4" href="$classbtk_1_1_t_r_b_file_i_o.html" title="Interface to read/write TRB files. " alt="" coords="139,177,247,205"/>
+<area shape="rect" id="node2" href="$classbtk_1_1_acquisition_file_i_o.html" title="Interface to read/write acquisition&#39;s files. " alt="" coords="53,6,199,34"/>
+</map>

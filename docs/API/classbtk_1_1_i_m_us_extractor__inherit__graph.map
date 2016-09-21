@@ -1,0 +1,4 @@
+<map id="btk::IMUsExtractor" name="btk::IMUsExtractor">
+<area shape="rect" id="node2" href="$classbtk_1_1_process_object.html" title="Interface to create a filter/process in a pipeline. " alt="" coords="4,83,136,111"/>
+<area shape="rect" id="node3" href="$classbtk_1_1_object.html" title="Base for all objects which need to keep track of modified time. " alt="" coords="28,6,112,34"/>
+</map>

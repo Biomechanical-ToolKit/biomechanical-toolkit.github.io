@@ -1,0 +1,26 @@
+<map id="btk::AcquisitionFileIO" name="btk::AcquisitionFileIO">
+<area shape="rect" id="node2" href="$classbtk_1_1_a_m_t_i_force_platform_file_i_o.html" title="Interface to read/write AMTIForcePlatform files. " alt="" coords="200,5,397,33"/>
+<area shape="rect" id="node3" href="$classbtk_1_1_a_n_c_file_i_o.html" title="Interface to read/write ANC files. " alt="" coords="244,57,354,85"/>
+<area shape="rect" id="node4" href="$classbtk_1_1_a_n_g_file_i_o.html" title="Interface to read/write ANG files. " alt="" coords="243,109,354,137"/>
+<area shape="rect" id="node5" href="$classbtk_1_1_b_s_f_file_i_o.html" title="Interface to read/write BSF files. " alt="" coords="245,161,353,189"/>
+<area shape="rect" id="node6" href="$classbtk_1_1_c3_d_file_i_o.html" title="Interface to read/write C3D files. " alt="" coords="244,213,353,241"/>
+<area shape="rect" id="node7" href="$classbtk_1_1_c_a_l_force_plate_file_i_o.html" title="Interface to read/write CAL files containing calibration of force platform. " alt="" coords="212,265,385,293"/>
+<area shape="rect" id="node8" href="$classbtk_1_1_c_l_b_file_i_o.html" title="Interface to read/write CLB files. " alt="" coords="245,317,353,345"/>
+<area shape="rect" id="node9" href="$classbtk_1_1_delsys_e_m_g_file_i_o.html" title="Interface to read Delsys EMG files. " alt="" coords="222,369,375,397"/>
+<area shape="rect" id="node10" href="$classbtk_1_1_e_m_f_file_i_o.html" title="Interface to read/write EMF files. " alt="" coords="244,421,354,449"/>
+<area shape="rect" id="node11" href="$classbtk_1_1_e_mx_file_i_o.html" title="Interface to read/write EMx files. " alt="" coords="244,473,353,501"/>
+<area shape="rect" id="node12" href="$classbtk_1_1_g_rx_file_i_o.html" title="Interface to read/write GRx files. " alt="" coords="244,525,353,553"/>
+<area shape="rect" id="node13" href="$classbtk_1_1_kistler_d_a_t_file_i_o.html" title="Interface to read Kistler DAT files. " alt="" coords="226,577,371,605"/>
+<area shape="rect" id="node14" href="$classbtk_1_1_m_d_f_file_i_o.html" title="Interface to read MDF/MDR files (Codamotion). " alt="" coords="243,629,354,657"/>
+<area shape="rect" id="node15" href="$classbtk_1_1_m_o_m_file_i_o.html" title="Interface to read/write MOM files. " alt="" coords="241,681,356,709"/>
+<area shape="rect" id="node16" href="$classbtk_1_1_motion_analysis_binary_file_i_o.html" title="Acquisition IO abstract class used for the Motion Analysis ANB/TRB file format. " alt="" coords="212,733,386,777"/>
+<area shape="rect" id="node19" href="$classbtk_1_1_p_w_r_file_i_o.html" title="Interface to read/write PWR files. " alt="" coords="242,801,355,829"/>
+<area shape="rect" id="node20" href="$classbtk_1_1_r_ax_file_i_o.html" title="Interface to read/write RAx files. " alt="" coords="245,853,352,881"/>
+<area shape="rect" id="node21" href="$classbtk_1_1_r_i_c_file_i_o.html" title="Interface to read/write RIC files. " alt="" coords="246,905,351,933"/>
+<area shape="rect" id="node22" href="$classbtk_1_1_t_d_f_file_i_o.html" title="Interface to read/write ANG files. " alt="" coords="245,957,353,985"/>
+<area shape="rect" id="node23" href="$classbtk_1_1_t_r_c_file_i_o.html" title="Interface to read/write TRC files. " alt="" coords="244,1009,353,1037"/>
+<area shape="rect" id="node24" href="$classbtk_1_1_x_l_s_ortho_trak_file_i_o.html" title="Class to read XLSOrthoTrak files. " alt="" coords="215,1061,382,1089"/>
+<area shape="rect" id="node25" href="$classbtk_1_1_x_m_o_v_e_file_i_o.html" title="Interface to read XMOVE/MDR files (Codamotion). " alt="" coords="234,1113,364,1141"/>
+<area shape="rect" id="node17" href="$classbtk_1_1_a_n_b_file_i_o.html" title="Interface to read/write ANB files. " alt="" coords="445,715,555,743"/>
+<area shape="rect" id="node18" href="$classbtk_1_1_t_r_b_file_i_o.html" title="Interface to read/write TRB files. " alt="" coords="446,767,554,795"/>
+</map>

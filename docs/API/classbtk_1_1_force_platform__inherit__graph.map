@@ -1,0 +1,5 @@
+<map id="btk::ForcePlatform" name="btk::ForcePlatform">
+<area shape="rect" id="node4" href="$classbtk_1_1_force_platform_type.html" title="Convenient class to represent a concrete force platform. " alt="" coords="4,238,163,282"/>
+<area shape="rect" id="node2" href="$classbtk_1_1_data_object.html" title="Input and output entry for processes in pipelines. " alt="" coords="27,83,140,111"/>
+<area shape="rect" id="node3" href="$classbtk_1_1_object.html" title="Base for all objects which need to keep track of modified time. " alt="" coords="41,6,125,34"/>
+</map>

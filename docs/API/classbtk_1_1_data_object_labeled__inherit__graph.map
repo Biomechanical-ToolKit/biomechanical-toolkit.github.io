@@ -1,0 +1,13 @@
+<map id="btk::DataObjectLabeled" name="btk::DataObjectLabeled">
+<area shape="rect" id="node4" href="$classbtk_1_1_event.html" title="Label a specific time/frame during an acquisition. " alt="" coords="556,5,636,33"/>
+<area shape="rect" id="node5" href="$classbtk_1_1_i_m_u.html" title="Container of analog channels representing an inertial measurement unit (IMU). " alt="" coords="561,57,631,85"/>
+<area shape="rect" id="node7" href="$classbtk_1_1_measure.html" title="Measure with d dimensions along the time. " alt="" coords="512,109,680,137"/>
+<area shape="rect" id="node8" href="$classbtk_1_1_meta_data.html" title="Store data which cannot be embedded within timeseries data (calibration matrix, subject informations..." alt="" coords="544,161,648,189"/>
+<area shape="rect" id="node9" href="$classbtk_1_1_measure.html" title="btk::Measure\&lt; Analog \&gt;" alt="" coords="515,213,677,241"/>
+<area shape="rect" id="node11" href="$classbtk_1_1_measure.html" title="btk::Measure\&lt; Point \&gt;" alt="" coords="520,265,672,293"/>
+<area shape="rect" id="node2" href="$classbtk_1_1_data_object.html" title="Input and output entry for processes in pipelines. " alt="" coords="139,135,253,163"/>
+<area shape="rect" id="node3" href="$classbtk_1_1_object.html" title="Base for all objects which need to keep track of modified time. " alt="" coords="5,135,91,163"/>
+<area shape="rect" id="node6" href="$classbtk_1_1_i_m_u_type.html" title="Convenient class to represents a concrete IMU. " alt="" coords="729,57,855,85"/>
+<area shape="rect" id="node10" href="$classbtk_1_1_analog.html" title="Analog channel data along the time. " alt="" coords="748,213,836,241"/>
+<area shape="rect" id="node12" href="$classbtk_1_1_point.html" title="Coordinates of a point in a 3D space along the time. " alt="" coords="754,265,830,293"/>
+</map>

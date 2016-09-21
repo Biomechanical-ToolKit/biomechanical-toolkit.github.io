@@ -1,0 +1,5 @@
+<map id="btk::MetaData" name="btk::MetaData">
+<area shape="rect" id="node2" href="$classbtk_1_1_data_object_labeled.html" title="DataObject with a label and a description. " alt="" coords="5,161,165,189"/>
+<area shape="rect" id="node3" href="$classbtk_1_1_data_object.html" title="Input and output entry for processes in pipelines. " alt="" coords="29,83,141,111"/>
+<area shape="rect" id="node4" href="$classbtk_1_1_object.html" title="Base for all objects which need to keep track of modified time. " alt="" coords="43,6,127,34"/>
+</map>
