@@ -12,4 +12,21 @@ excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
-include: docs # For Doyxgen filename starting with a underscore
+
+# For Doyxgen filename starting with a underscore
+include:
+ - docs/API/_advanced_tutorial.html
+ - docs/API/_build_instructions.html
+ - docs/API/_developer.html
+ - docs/API/_file_format_supported.html
+ - docs/API/_getting_started.html
+ - docs/API/_license.html
+ - docs/Wrapping/Matlab/_f_a_q.html
+ - docs/Wrapping/Matlab/_file_format_supported.html
+ - docs/Wrapping/Matlab/_structure_fieldname_format.html
+ - docs/Wrapping/Matlab/_tutorial.html
+ - docs/Wrapping/Matlab/_warnings_i_d.html
+ - docs/Wrapping/Python/_build_instructions.html
+ - docs/Wrapping/Python/_file_format_supported.html
+ - docs/Wrapping/Python/_getting_started.html
+ - docs/Wrapping/Python/_license.html
