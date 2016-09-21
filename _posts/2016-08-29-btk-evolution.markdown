@@ -9,7 +9,7 @@ Dear users,
 
 Since 2009, the project BTK helped lots of people to simplify data management and accelerate their development. In 2015, during the [33rd ISBS congress](https://isbs2015.sciencesconf.org), I announced the future of BTK with the integration of biomechanical models (e.g. computation of joint kinetics and kinematics using conventional models like Plug-in Gait or Helen Hayes). 
 
-One year later, this comes true! 
+One year later, this comes true!<!--more-->
 
 I would like to introduce a new open-source project called OpenMA (Open-source Movement Analysis library) and available on the website http://www.openma.org. This is a large evolution of BTK. Due to new internal concepts, the rewriting of the whole code, and eventually the usage of the acronym BTK in the USA, it was decided to rename the project to better fit with the new goals. 
 
@@ -24,6 +24,7 @@ The project is in heavy development, but it is already possible to:
  - compute joint kinetics. 
  - write data to C3D files 
  - write calculuses with automatic data occlusion management (i.e. no need of a loop to test data validity on each sample!) 
+
 
 The core is still in C++ and bindings will be available (e.g Matlab, Python 2 & 3). The code was successfully tested by different teams. 
 
