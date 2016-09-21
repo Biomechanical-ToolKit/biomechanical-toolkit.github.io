@@ -24,7 +24,7 @@ The project is in heavy development, but it is already possible to:
  - compute joint kinetics. 
  - write data to C3D files 
  - write calculuses with automatic data occlusion management (i.e. no need of a loop to test data validity on each sample!) 
-  
+
 The core is still in C++ and bindings will be available (e.g Matlab, Python 2 & 3). The code was successfully tested by different teams. 
 
 The project wants to provide simple but powerful tools to accelerate development and simplify collaboration between teams. 
