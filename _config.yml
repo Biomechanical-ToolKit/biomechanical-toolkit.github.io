@@ -30,3 +30,27 @@ include:
   - _file_format_supported.html
   - _getting_started.html
   - _license.html
+  - _mokka3_d_view.html
+  - _mokka_cmd_line.html
+  - _mokka_import_assistant.html
+  - _mokka_intro.html
+  - _mokka_menu_bar.html
+  - _mokka_menu_bar.js
+  - _mokka_model_pane.html
+  - _mokka_preferences.html
+  - _mokka_release_note.html
+  - _mokka_shortcut.html
+  - _mokka_time_bar.html
+  - _mokka_tools.html
+  - _mokka_tutorial.html
+  - _mokka_tutorial.js
+  - _mokka_tutorial__add_remove_event.html
+  - _mokka_tutorial__change_color_marker.html
+  - _mokka_tutorial__create_cycle_definition.html
+  - _mokka_tutorial__create_new_segment.html
+  - _mokka_tutorial__create_save_new_configuration.html
+  - _mokka_tutorial__edit_event.html
+  - _mokka_tutorial__watch_video.html
+  - _mokka_view.html
+  - _mokka_working.html
+  - _mokka_working.js
