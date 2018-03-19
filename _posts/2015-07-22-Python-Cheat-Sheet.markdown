@@ -7,4 +7,4 @@ categories: btk python documentation
 
 You will find a nice [cheat sheet] offered by Fabien Leboeuf (University of Salford, UK) giving all the necessary and useful information regarding the usages of BTK into Python.
 
-[cheat sheet]: https://www.dropbox.com/s/vfifdohucxiw3gs/Cheat_Sheet_PythonBTK0.3-v0.1.pdf?dl=1
+[cheat sheet]: https://pycgm2.github.io/resources/cheat%20sheet%20BTK0.3.pdf
