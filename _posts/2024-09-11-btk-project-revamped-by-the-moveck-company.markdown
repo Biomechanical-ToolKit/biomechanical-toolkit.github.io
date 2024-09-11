@@ -14,7 +14,7 @@ The Python API will be a mirror of the Matlab API but for Python 3.x! This will 
  - The new documentation will be hosted on the website of Moveck.
  - Apple Silicon processors will be supported.
  - Some known fixes will be corrected (e.g., non-ASCII characters in filenames).
- - New function will be available (e.g., btkGetRotations to get access to rotation matrices stored in some C3D files).
+ - New functions will be available (e.g., btkGetRotations to get access to rotation matrices stored in some C3D files).
 
 [Bridge] and [Explore] are designed for effortless handling of massive data processing. It complements applications like [Pipe] and [Cleanse], all created to meet the demand for quick and efficient data management.
 
